@@ -1,17 +1,42 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.print("Hello and welcome!");
+        Character b2 = new Character("B2", 1, 5);
+        Character a2 = new Character("A2", 1, 10);
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+//        System.out.println(b2.name);
+//        System.out.println("atk = " + b2.atk + " def = " + b2.def)
+        b2.ShowName();
+        b2.ShowStatus();
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        Sword sword = new Sword(1);
+        Shield shield = new Shield(1);
+        System.out.println("sword atk = "+sword.Satk);
+        System.out.println();
+        a2.equipSword(sword);
+        b2.equipSword(sword);
+        b2.equipShield(shield);
+
+        b2.ShowStatus();
+//        System.out.println("atk = " + b2.atk + " def = " + b2.def);
+
+        b2.ShowHMR();
+        b2.levelUp();
+        System.out.println("-----------------------------------");
+        System.out.println("level up!!!");
+        System.out.println("-----------------------------------");
+        System.out.println();
+        b2.ShowHMR();
+        System.out.println("-----------------------------------");
+        System.out.println();
+
+        b2.takeDamage(30);
+        b2.ShowCurrentHP();
+        b2.fireball(30);
+        b2.ShowCurrentMana();
+        b2.fireball(30);
+        Character.attack(a2, b2);
+        b2.ShowCurrentHP();
+
     }
 }
