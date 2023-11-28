@@ -1,10 +1,23 @@
 public class Shield {
-    private final int level;
-    public int Sdef;
+    private int level;
+    int Sdef;
 
     public Shield(int level) {
         this.level = level;
         this.Sdef = 3 + level;
+    }
+
+    public void levelUp() {
+        level++;
+        Sdef = 3 + level;
+    }
+
+    public void ShowDef(){
+        System.out.println("Shield Atk = "+ Sdef);
+    }
+
+    public void Showlevel(){
+        System.out.println("Shield level = " + level);
     }
 
     public double calculateRunSpeedDecrease(int characterLevel) {

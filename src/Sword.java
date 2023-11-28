@@ -1,10 +1,22 @@
 public class Sword {
-    int level;
-    public int Satk;
+    private int level;
+    int Satk;
 
     public Sword(int level) {
         this.level = level;
         this.Satk = 5 + level;
+    }
+
+    public void ShowAtk(){
+        System.out.println("Sword Atk = "+ Satk);
+    }
+
+    public void Showlevel(){
+        System.out.println("Sword level = " + level);
+    }
+    public void levelUp() {
+        level++;
+        Satk = 5 + level;
     }
 
     public double calculateRunSpeedDecrease(int characterLevel) {

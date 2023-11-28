@@ -11,7 +11,8 @@ public class Main {
 
         Sword sword = new Sword(1);
         Shield shield = new Shield(1);
-        System.out.println("sword atk = "+sword.Satk);
+        sword.ShowAtk();
+        shield.ShowDef();
         System.out.println();
         a2.equipSword(sword);
         b2.equipSword(sword);
@@ -38,5 +39,13 @@ public class Main {
         Character.attack(a2, b2);
         b2.ShowCurrentHP();
 
+        sword.levelUp();
+        sword.Showlevel();
+        shield.levelUp();
+        shield.Showlevel();
     }
+
+
+
+
 }
