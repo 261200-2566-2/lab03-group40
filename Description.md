@@ -79,7 +79,18 @@
     - public double calculateDamage(int characterLevel)
 
       - ใช้เพื่อคำนวณพลังโจมตีที่เพิ่มขึ้นหลังจากสวมใส่
+    
+    - public void levelUp()
+      
+      - ใช้เรียกเพื่อเพิ่มเลเวลอุปกรณ์ดาบ
+    
+    - public void ShowAtk()
+      
+      - เรียกใช้เพื่อแสดงค่าพลังโจมตีของดาบ 
+    
+    - public void Showlevel()
 
+      - เรียกใช้เพื่อแสดงเลเวลของอาวุธ
   - Class  Shield
 
     - public double calculateRunSpeedDecrease(int characterLevel)
@@ -87,7 +98,19 @@
       - ใช้เรียกเพื่อคำนวณค่าความเร็วที่ลดลงหลังจากที่สวมใส่
     -  public double reduceDamage(double incomingDamage, int characterLevel)
 
-    - ใช้เพื่อคำนวณค่าความเสียหายที่ลดลงหลังจากสวมใส่โล่
+       - ใช้เพื่อคำนวณค่าความเสียหายที่ลดลงหลังจากสวมใส่โล่
+
+    - public void levelUp()
+
+      - ใช้เรียกเพื่อเพิ่มเลเวลอุปกรณ์โล่
+
+    - public void ShowDef()
+
+      - เรียกใช้เพื่อแสดงค่าพลังป้องกันของโล่
+      
+    - public void Showlevel()
+
+      - เรียกใช้เพื่อแสดงเลเวลของโล่
 
 - how and where to compute information
   
